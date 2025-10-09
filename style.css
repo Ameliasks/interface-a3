@@ -19,16 +19,6 @@ h1 {
   margin-bottom: 0px;
 }
 
-.h1-padded {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 64px;
-  padding-top: 2rem;
-  letter-spacing: -1.5px;
-}
-
 h2 {
   font-family: "Instrument Sans", sans-serif;
   font-optical-sizing: auto;
@@ -55,22 +45,24 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 19px;
+  font-size: 17px;
   color: black;
-  text-align: justify;
+  text-align: left;
+  line-height: 1.7rem;
 }
 
 h3 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 17px;
+  font-size: 18px;
   color: black;
   display: flex;
   margin-top: 0px;
   justify-content: center;
   text-transform: uppercase;
   text-align: center;
+  padding: 1.7rem;
 }
 
 .question {
@@ -218,51 +210,16 @@ footer {
   text-decoration: none;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   color: rgb(0, 51, 169);
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   color: rgb(0, 0, 0);
 }
 
 section {
-  /* background-color: lightblue;  */
-  padding: 3rem; /* Spacing inside the div */
-  text-align: left; /* Align text content */
-}
-
-.div-home {
-  height: 36rem;
-  padding: 5rem;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.div-home-text {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: flex-end;
-  text-align: center;
-  margin-left: 200px;
-}
-
-.div-body {
-  height: auto;
-  display: flex;
-  align-items: flex-end;
-  padding-top: 1rem;
-  width: 85%;
-}
-
-.div-type {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  width: 90%;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 3rem;
 }
