@@ -62,7 +62,8 @@ h3 {
   justify-content: center;
   text-transform: uppercase;
   text-align: center;
-  padding: 1.7rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
 }
 
 .question {
@@ -133,8 +134,11 @@ ul {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 19px;
+  font-size: 17px;
   color: black;
+  text-align: left;
+  line-height: 1.7rem;
+  padding: 1.5rem;
 }
 ::selection {
   background-color: rgb(0, 51, 169);
@@ -198,20 +202,20 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .topnav a {
   color: black;
   text-align: center;
-  padding: 0 2rem;
   margin: 1rem;
   text-decoration: none;
 }
 
 .topnav a:hover {
   color: rgb(0, 51, 169);
+  text-decoration: underline;
 }
 
 .topnav a.active {
