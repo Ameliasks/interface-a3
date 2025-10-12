@@ -12,11 +12,12 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 64px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  letter-spacing: -1.5px;
+  font-size: 90px;
+  letter-spacing: -5px;
   margin-bottom: 0px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -28,16 +29,6 @@ h2 {
   text-transform: uppercase;
   color: black;
   letter-spacing: -0.2px;
-}
-
-.p-question {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 24px;
-  padding-top: 2rem;
-  color: rgb(122, 122, 122);
 }
 
 p {
@@ -91,41 +82,10 @@ h3 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(122, 122, 122);
   display: flex;
-  text-transform: uppercase;
-}
-
-.special {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  color: rgb(0, 51, 169);
-  display: flex;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.special:hover {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  color: rgb(0, 0, 0);
-  display: flex;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.small:hover {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  color: rgb(0, 51, 169);
-  display: flex;
+  justify-content: center;
   text-transform: uppercase;
 }
 
@@ -201,15 +161,13 @@ footer {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 75%;
+  width: 52%;
   margin: 0 auto;
 }
 
 .topnav a {
   color: black;
   text-align: center;
-  margin: 1rem;
   text-decoration: none;
 }
 
@@ -226,4 +184,11 @@ section {
   max-width: 75%;
   margin: 0 auto;
   padding: 3rem;
+}
+
+.screenShot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
 }
