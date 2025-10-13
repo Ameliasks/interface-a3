@@ -113,9 +113,10 @@
           functionalities that I thought would improve the UI. This included the 
           date.now() features, that updates the vinyl colour, music and ambient 
           sound based on the time of day, as well as display the current day and 
-          time on the user’s device-which also changes colour as the vinyl updates. 
-<br><br>
-I successfully got the volume slider to control the volume of the music, and added a
+          time on the user’s device-which also changes colour as the vinyl updates.
+          
+          <br><br>
+          I successfully got the volume slider to control the volume of the music, and added a
  mute button function so that the user can more conveniently toggle the volume to 
  mute and vice-versa. This accessibility function was achieved by using svg paths 
  and CSS classes, I had designed the vector logos myself in illustrator and later 
@@ -145,8 +146,8 @@ UI changing based on day, afternoon and night, as I was told that this would bri
           </li>
         </ul>
         <p>One of my greatest takeaways in coding JavaScript was learning the difference in declarations (eg.const, let and var). I had encountered some issues where I had multiple const declarations for the same element, which created errors in my code. I circumvented this problem by using different var declarations catered to each specific function I wanted to write instead. With this method though, I had to make sure that I gave each var declaration very detailed names, so that the declaration names would not overlap in my extensive javascript document.
-
-Another minor issue I was tussling with was the design of the UI. For this project, I chose to base It off a nu-brutalist aesthetic. As I have always been a maximalist when it comes to my design style, it was a challenge that I chose to give myself this year to create more minimalist designs. That being said, when I had already incorporated all the functionality that I had planned, I could not help but feel like something was missing. But I accessed that in the end, the simplicity of the UI would provide users with a comfortable experience, and to add anything more would overcomplicate it.
+          <br><br>A complication I encountered along the way was overlapping code. As I started to expand the project with more functions, I had to alter or remove some of the older code in order to make sure the new code runs effectively. For example, in the prototype, I had separate functions to call the start of the vinyl record rotation and the music to play when the ‘close’ button in the introduction dialog, and this worked smoothly at the time. However later on, when I added the animation of the needle, I wanted the vinyl record to start rotating only after the needle reaches its final position, and for the music to start playing after that delay as well. To achieve this, I wrote an entirely new function, making use of the classList and setTimeout properties. This new function worked, but I realised when I previewed the interface, the music started to play immediately upon landing on the site without any user actions. I was perplexed by this, but I went through the code with the audio id and I found out it was because the initial code to play the music on ‘close' had a .play() written into it. Because I had shifted around the older code to make sure the new one works effectively, I had accidentally created conflicting instructions in the script and am now calling for the music to be played automatically when the site loads. I commented out the .play() line, and the music does not play automatically anymore.
+          <br><br>Another minor issue I was tussling with was the design of the UI. For this project, I chose to base It off a nu-brutalist aesthetic. As I have always been a maximalist when it comes to my design style, it was a challenge that I chose to give myself this year to create more minimalist designs. That being said, when I had already incorporated all the functionality that I had planned, I could not help but feel like something was missing. But I accessed that in the end, the simplicity of the UI would provide users with a comfortable experience, and to add anything more would overcomplicate it.
         </p>
         <ul>
           <li>The design aspect that you are most proud of.</li>
