@@ -86,6 +86,23 @@ h3 {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.capsule-text {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  text-decoration: uppercase;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  /* align-items: center; */
 }
 
 ul {
@@ -149,13 +166,6 @@ footer {
   margin: 2rem;
 }
 
-.specialDiv {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: -40px;
-}
-
 .topnav {
   overflow: hidden;
   display: flex;
@@ -189,5 +199,4 @@ section {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0;
 }
