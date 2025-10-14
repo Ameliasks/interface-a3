@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDAD A3 Demo</title>
+    <title>Interface Design and Development A3</title>
     <link rel="stylesheet" href="style.css" />
     <style></style>
   </head>
@@ -34,27 +34,13 @@
       <section>
         <h3>Project Overview</h3>
 
-        <p><i>
-          Self-reflection and self-criticality are important skills as a
-          designer in any medium, and the written reflection is not only a
-          chance to highlight the things you did well, but to look at the parts
-          that you think could have been approached in a different manner. When
-          I assess reflections, I value an honest discussion of the process, and
-          am looking for an engagement with your own perspective of what
-          occurred as you were building your UI.
-        </p></i>
-        <p><i>
-          While there's no word limit or suggestion on the written component,
-          there are 6 different points you are required to highlight. They are a
-          separated list, and I'll briefly touch on each below, however your
-          reflection doesn't need to be formatted as a paragraph on each. While
-          it may be good to use the keywords (values, feedback, learnability
-          etc) to signal their discussion in your writing, these different
-          points should relate to each other, your UIs concept, and the way it
-          responds to the creative prompt and advanced technique. As such
-          integrating them together within the structure of your reflection will
-          typically make sense.
-        </p></i>
+        <p>
+          The creative prompt I have chosen is skeuomorphism, and the technique I have chosen to implement is date/time: Date.now(). In this project, I will attempt to build a skeuomorphic interface of a turntable that will play different variations of a song depending of the time of day the user is in. The design of the vinyl record will also be be changed every time the song variation changes.
+
+          The track I am using is 'June Time' by Patrick Patrikios, which is free to use with the YouTube Audio Library licence. I will be editing the different variations of the song with Reaper. There will be 3 variations in total.
+          
+          The visual direction of the project is greatly inspired by nu-brutalism, which is characterised by high contrast elements and blocky layouts. While the interface will closely replicate the look and functionality of a real record player, it will be designed in a minimalist vector style. I will be using Adobe Illustrator to illustrate the vector elements before importing them into Visual Studio Code.
+        </p>
 
         <p>
           I am generally satisfied with the final UI (user interface) of the project, as I have accomplished all the functions I had set out to achieve during the planning stage and more. I have definitely learnt a lot from all the trial and error and problem solving, and improved on my skills in HTML, CSS and especially Javascript over the course of working on this project. 
@@ -64,7 +50,7 @@
         <h3>
               Your design's guiding values and how they were embodied in the UI.
        </h3>
-       <span class="capsule-text">Skeumorphism</span>
+       <span class="capsule-text">Expressivity/Immersive/Transparency/Efficiency</span>
           <span class="capsule-text">Learnability</span>
           <p>To assist with the learnability of the UI, I implemented introduction and information dialogs. When the page loads for the user, the introduction dialog alerts them that the interface will play audio and the user has to acknowledge this before the music starts to play. This will lessen confusion for the users when they visit the interface for the first time, and they would not be caught off guard when the music plays.
 <br><br>
@@ -86,7 +72,31 @@ The information dialog is partially disguised in the main interface as I did not
           I also designed other smaller forms of feedback using CSS for the other interactions. I mainly made use of the :hover pseudo class to fill the buttons whenever the user hovers over them, as a way to indicate to them that it is an interactive element. This feedback is important because there is a lack of labelling and instructions on how to operate the different interactive elements, and if my intention was to allow users to figure it out themselves, this feedback would at least provide hints to help them along. The start/stop button and information button have a subtle scale transformation added in the hover class on top of the fill colour. 
           <br> <br>
           And aside from hover, I also made use of position change with the ambient sound dial on the bottom left of the interface that moves up and down based on whether the dial in switch on or off. And for the volume slider, using svg paths, I made the music icon change to a mute icon whenever the slider is at 0 value, and mute the volume automatically if the user clicks on it. Although the feedback is more subtle than the vinyl record, I hope that I will help create a deeper immersion for the users of the interface.
-        </p></section>
+        </p>
+      
+        <span class="capsule-text">Information Design and Mapping</span>
+      <p>
+        As my design was meant to be a skeumorphic reference of a physical vinyl record player, the overall information design and mapping 
+        was already mostly fixed. The positions of the needle, disk, and start/stop button were features that I referenced directly, 
+        and what is more conventionally the speed slider, I had converted to a volume slider instead. The features that I had to decide
+         how to map out were the ones unique to my UI: the information button, the ambient sound dial and the clock. 
+<br><br>
+For the information button, I referenced the mapping of menu buttons as that is the closest equivalent to the function of my button. 
+Menu buttons are often placed at the top of the page as they allow users to quickly navigate a site without causing disruption to the 
+main content of the page. Thus, I placed this button on the top-left of the interface. I used a rounded rectangle shape, as I thought the 
+rounded corners complement the overall design more, and used a monospaced typeface as it suited the nu-brutalism aesthetic I was going for.
+<br><br>
+For the ambient sound dial, I placed it above the start/stop button as it has a very similar function but controls a different audio. 
+The start/stop button toggles the playback of the music track, while the dial toggles the playback of thee ambient sound. By grouping 
+these two buttons, it creates a visual relationship for the user, which will hopefully make the user flow more intuitive.
+<br><br>
+For the clock, I must be honest and say that initially, there was the only part of the interface left that had enough negative space to 
+comfortably host the clock feature. However, I think this mapping ended up being more cohesive after adding the needle animation. 
+After the user clicks ‘close’ on the introduction dialog, the needle moves over the clock before reaching the disk. This animation 
+directs the user’s attention to the clock at the beginning of their experience, which reinforces the significance that time plays in 
+this interface.
+      </p>
+      </section>
         <div class="dotted-line "></div>
 <section>
         <h3>
@@ -152,12 +162,7 @@ After the submission in week 8, I spent the next week implementing the remaining
          <h3>The design aspect you found most challenging.</h3>
         </ul>
         <p>
-          The final two are different sides of the same coin. I've specifically
-          avoided using positive/negative wording, and focused on your
-          perspective, versus what you think others might perceive in your final
-          UI. Maybe you're most proud of an underlying JS function that no user
-          will ever see, or you found making your characterisation cohesive the
-          most challenging, even if you think it was ultimately successful.
+          While there was no one design aspect that was the most challenging, at the beginning, I think building the code for the toggle play/pause button was particularly time-consuming. It was my first time working on a UI that is not mainly HTML and text-based, and I was still very new to Javascript at the time, so it took a little longer for me to learn how to achieve the things that I wanted to do. I think writing the if…else statements were quite confusing to me a first as well, which was what I needed to use for my toggle play/pause function. As I did more research, and even more troubleshooting, I gradually got better and more used to Javascript as I went. Writing ad processing the logic on paper and code commenting on the script definitely helped me in processing my thought as well.
         </p></section>
 
         <div class="dotted-line "></div>
@@ -167,13 +172,13 @@ After the submission in week 8, I spent the next week implementing the remaining
          </h3>
 
         <p>One of my greatest takeaways in coding JavaScript was learning the difference in declarations (eg.const, let and var). I had encountered some issues where I had multiple const declarations for the same element, which created errors in my code. I circumvented this problem by using different var declarations catered to each specific function I wanted to write instead. With this method though, I had to make sure that I gave each var declaration very detailed names, so that the declaration names would not overlap in my extensive javascript document.
-          <br><br>A complication I encountered along the way was overlapping code. As I started to expand the project with more functions, I had to alter or remove some of the older code in order to make sure the new code runs effectively. For example, in the prototype, I had separate functions to call the start of the vinyl record rotation and the music to play when the ‘close’ button in the introduction dialog, and this worked smoothly at the time. However later on, when I added the animation of the needle, I wanted the vinyl record to start rotating only after the needle reaches its final position, and for the music to start playing after that delay as well. To achieve this, I wrote an entirely new function, making use of the classList and setTimeout properties. This new function worked, but I realised when I previewed the interface, the music started to play immediately upon landing on the site without any user actions. I was perplexed by this, but I went through the code with the audio id and I found out it was because the initial code to play the music on ‘close' had a .play() written into it. Because I had shifted around the older code to make sure the new one works effectively, I had accidentally created conflicting instructions in the script and am now calling for the music to be played automatically when the site loads. I commented out the .play() line, and the music does not play automatically anymore.
+          <br><br>But inevitably, I still faced complications due to overlapping code. As I started to expand the project with more functions, I had to alter or remove some of the older code in order to make sure the new code runs effectively. For example, in the prototype, I had separate functions to call the start of the vinyl record rotation and the music to play when the ‘close’ button in the introduction dialog, and this worked smoothly at the time. However later on, when I added the animation of the needle, I wanted the vinyl record to start rotating only after the needle reaches its final position, and for the music to start playing after that delay as well. To achieve this, I wrote an entirely new function, making use of the classList and setTimeout properties. This new function worked, but I realised when I previewed the interface, the music started to play immediately upon landing on the site without any user actions. I was perplexed by this, but I went through the code with the audio id and I found out it was because the initial code to play the music on ‘close' had a .play() written into it. Because I had shifted around the older code to make sure the new one works effectively, I had accidentally created conflicting instructions in the script and am now calling for the music to be played automatically when the site loads. I commented out the .play() line, and the music does not play automatically anymore.
           <br><br>Another minor issue I was tussling with was the design of the UI. For this project, I chose to base It off a nu-brutalist aesthetic. As I have always been a maximalist when it comes to my design style, it was a challenge that I chose to give myself this year to create more minimalist designs. That being said, when I had already incorporated all the functionality that I had planned, I could not help but feel like something was missing. But I accessed that in the end, the simplicity of the UI would provide users with a comfortable experience, and to add anything more would overcomplicate it.
         </p>
       </section>
 
 
-        <div class="dotted-line "></div>
+        <div class="dotted-line"></div>
 
 
       <section>  
