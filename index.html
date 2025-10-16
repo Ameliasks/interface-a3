@@ -45,7 +45,9 @@
 
         <p>
           I am generally satisfied with the final UI (user interface) of the project, as I have successfully implemented all the functions I had set out to achieve during the planning stage and more. I have definitely learnt a lot from all the trial and error and problem solving, and improved my skills in HTML, CSS and especially Javascript over the course of this project. 
-        </p></section>
+        </p>     <img src="interfaceGlossary.png" class="screenShot" alt="interface glossary"></img>
+        <p class="small">Interface Glossary</p>
+      </section>
         <div class="dotted-line "></div>
       <section>
         <h3>
@@ -101,7 +103,7 @@ main content of the page. Thus, I placed this button on the top-left of the inte
 rounded corners complement the overall design more, and used a monospaced typeface as it suited the nu-brutalism aesthetic I was going for.
 <br><br>
 For the ambient sound dial, I placed it above the start/stop button as it has a very similar function but controls a different audio. 
-The start/stop button toggles the playback of the music track, while the dial toggles the playback of thee ambient sound. By grouping 
+The start/stop button toggles the playback of the music track, while the dial toggles the playback of the ambient sound. By grouping 
 these two buttons, it creates a visual relationship for the user, which will hopefully make the user flow more intuitive.
 <br><br>
 For the clock, I must be honest and say that initially, there was the only part of the interface left that had enough negative space to 
@@ -139,6 +141,16 @@ this interface.
  to be set above half volume. That and the addition on the music icon was to better 
  signal to users that the slider controls volume, instead of the conventional speed sliders found on turntables.
  <br><br>
+ <p>
+ Another feature I added was for the disk to slowly stop in position when the user toggles the start/stop button to stop.
+ This addition helps make the experience more immersive and increases the skeumorphic element of the project, 
+ because real physical turntables and vinyl records would not jump to a stop position as demostrated in my prototype.
+ Adding this feature took awhile because I was using the classList method, and I could not control the timing of the transition.
+ Turns out, using style.animationPlayState was the answer to this dilemma.
+</p>
+ <img src="vinylCompare.png" class="screenShot-small" alt="vinyl comparison"></img>
+  <p class="small">Record now stops in position</p>
+ <br><br><p>
 I also updated the information dialog to include more information about the 
 UI changing based on day, afternoon and night, as I was told that this would bring
  better clarity to the date.now() function of the UI with the right amount of 
@@ -148,6 +160,8 @@ UI changing based on day, afternoon and night, as I was told that this would bri
   it was appropriate for this information to be hidden unless the user wants to look 
   for it, as the sheer amount of text could become distracting for the user.
         </p>
+        <img src="dialogCompare.png" class="screenShot-small" alt="dialog comparison"></img>
+        <p class="small">Information Dialog Comparison</p>
       </section>
         <div class="dotted-line "></div>
         <section>
@@ -157,9 +171,11 @@ UI changing based on day, afternoon and night, as I was told that this would bri
          </h3>
          <p>
           In week 4 after looking at the assignment brief, I kind of lucked out with inspiration and established quickly this idea of a digital vinyl record player using the technique of skeumorphism. In the following 2 weeks I was searching up visual references across Google and Pinterest, 
-          and decided on the aesthetic of the UI and basic functionality it would require per the brief. Once I had decided to implement the data.now() technique, I drew up the system map that would guide the process of building out this interface. In week 6 was when I started the coding proper, with 1 vinyl design, 1 music track and 1 ambient track prepared - what I believed was sufficient for the first prototype. I used Adobe Illustrator and some Photoshop to design the appearance of the UI, and used Reaper to prepare the remix. I figured that since it would be challenging for my test users to test the date.now() feature during the  class session, I held off writing that complicated part of the code for after the assignment 2 submission. I also spent week 6 fleshing out the written parts of the millstone presentation. Although there were some struggles here and there, I managed to get the prototype to a satisfactory standard for the user-testing.
+          and decided on the aesthetic of the UI and basic functionality it would require per the brief. Once I had decided to implement the data.now() technique, I drew up the system map that would guide the process of building out this interface. In week 6 was when I started the coding proper, with 1 vinyl design, 1 music track and 1 ambient track prepared - what I believed was sufficient for the first prototype. I used Adobe Illustrator and some Photoshop to design the appearance of the UI, and used Reaper to prepare the remix. I figured that since it would be challenging for my test users to test the date.now() feature during the  class session, I held off writing that complicated part of the code for after the assignment 2 submission. 
+          I also spent week 6 fleshing out the written parts of the millstone presentation. Although there were some struggles here and there, I managed to get the prototype to a satisfactory standard for the user-testing.
 <br><br>
-After the submission in week 8, I spent the next week implementing the remaining functions in my system map and the feedback from the peer user-testing through out weeks 9,10,11. During the in-class consultations of this period, I managed to consult regarding the problems I was running into and also received additional notes on how I could further improve my UI. By week 12, the UI was mostly completed with some minor bugs, which I managed to fix without much issue. I spent the rest of this last week writing the reflection document.
+After the submission in week 8, I spent the next week implementing the remaining functions in my system map and the feedback from the peer user-testing through out weeks 9,10 and 11. 
+During the in-class consultations of this period, I managed to consult regarding the problems I was running into and also received additional notes on how I could further improve my UI. By week 12, the UI was mostly completed with some minor bugs, which I managed to fix without much issue. I spent the rest of this last week writing the reflection document.
          </p>
          <img src="prototype.png" class="screenShot" alt="Prototype"></img>
          <p class="small"> Appearance of Prototype During User Testing </p>
@@ -177,7 +193,8 @@ After the submission in week 8, I spent the next week implementing the remaining
          <h3>The design aspect you found most challenging.</h3>
         </ul>
         <p>
-          While it was not supposed to be very challenging, at the beginning, building the code for the toggle play/pause button was particularly time-consuming. It was my first time working on a UI that is not mainly HTML and text-based, and I was still very new to Javascript at the time, so it took a little longer for me to learn how to achieve the things that I wanted to do. I think writing the if…else statements were quite confusing to me a first as well, which was what I needed to use for my toggle play/pause function. As I did more research, and even more troubleshooting, I gradually got better and more used to Javascript as I went. Writing and processing the logic on paper and code commenting on the script definitely helped me in processing my thought as well.
+          While it was not supposed to be very challenging, at the beginning, building the code for the toggle play/pause button was particularly time-consuming. It was my first time working on a UI that is not mainly HTML and text-based, and I was still very new to Javascript at the time, so it took a little longer for me to learn how to achieve the things that I wanted to do. I think writing the if…else statements were quite confusing to me a first as well, which was what I needed to use for my toggle play/pause function. As I did more research, and even more troubleshooting, I gradually got better and more used to Javascript as I went. Writing and processing the logic on paper and code commenting on the script definitely helped me in processing my thoughts as well.
+          Surprisingly enough, writing the date.now() Javascript code was not as challenging as I expected it to be. Especially at the beginning, I was slightly apprehensive if I would be able to pull off what I planned to create with that technique. As a whole, I think I spent most of my development time fixing bugs that turned up here and there, instead of struggling particularly with any design aspect.
         </p></section>
 
         <div class="dotted-line "></div>
@@ -187,7 +204,9 @@ After the submission in week 8, I spent the next week implementing the remaining
          </h3>
 
         <p>One of my greatest takeaways in coding JavaScript was learning the difference in declarations (eg.const, let and var). I had encountered some issues where I had multiple const declarations for the same element, which created errors in my code. I circumvented this problem by using different var declarations catered to each specific function I wanted to write instead. With this method though, I had to make sure that I gave each var declaration very detailed names, so that the declaration names would not overlap in my extensive javascript document.
-          <br><br>But inevitably, I still faced complications due to overlapping code. As I started to expand the project with more functions, I had to alter or remove some of the older code in order to make sure the new code runs effectively. For example, in the prototype, I had separate functions to call the start of the vinyl record rotation and the music to play when the ‘close’ button in the introduction dialog, and this worked smoothly at the time. However later on, when I added the animation of the needle, I wanted the vinyl record to start rotating only after the needle reaches its final position, and for the music to start playing after that delay as well. To achieve this, I wrote an entirely new function, making use of the classList and setTimeout properties. This new function worked, but I realised when I previewed the interface, the music started to play immediately upon landing on the site without any user actions. I was perplexed by this, but I went through the code with the audio id and I found out it was because the initial code to play the music on ‘close' had a .play() written into it. Because I had shifted around the older code to make sure the new one works effectively, I had accidentally created conflicting instructions in the script and am now calling for the music to be played automatically when the site loads. I commented out the .play() line, and the music does not play automatically anymore.
+          </p><br><img src="varStatements.png" class="screenShot-small" alt="var example"></img>
+          <p class="small">Var Declarations Use Example</p>
+          <p><br>But inevitably, I still faced complications due to overlapping code. As I started to expand the project with more functions, I had to alter or remove some of the older code in order to make sure the new code runs effectively. For example, in the prototype, I had separate functions to call the start of the vinyl record rotation and the music to play when the ‘close’ button in the introduction dialog, and this worked smoothly at the time. However later on, when I added the animation of the needle, I wanted the vinyl record to start rotating only after the needle reaches its final position, and for the music to start playing after that delay as well. To achieve this, I wrote an entirely new function, making use of the classList and setTimeout properties. This new function worked, but I realised when I previewed the interface, the music started to play immediately upon landing on the site without any user actions. I was perplexed by this, but I went through the code with the audio id and I found out it was because the initial code to play the music on ‘close' had a .play() written into it. Because I had shifted around the older code to make sure the new one works effectively, I had accidentally created conflicting instructions in the script and am now calling for the music to be played automatically when the site loads. I commented out the .play() line, and the music does not play automatically anymore.
           <br><br>Another minor issue I was tussling with was the design of the UI. For this project, I chose to base it off a nu-brutalist aesthetic. As I have always been a maximalist when it comes to my design style, it was a challenge that I chose to give myself this year to create more minimalist designs. That being said, when I had already incorporated all the functionality that I had planned, I could not help but feel like something was missing. But I accessed that in the end, the simplicity of the UI would provide users with a comfortable experience, and to add anything more would overcomplicate it.
         </p>
       </section>
@@ -206,7 +225,7 @@ After the submission in week 8, I spent the next week implementing the remaining
       <img src="nightVer.png" class="screenShot" alt="Night Version"></img>
           <p class="small">🌃 Night Version (4pm-12am)</p>
 <p>
-          As my background largely lies In motion graphics and graphic design, coding an interface such as this has really presented me with an interesting challenge. Although it was very daunting in the beginning, I started with the part that felt most comfortable for me: design. Once I had defined  and mapped out the problems I had to solve in order to achieve my final design, everything slowly came together piece by piece, and learning from the consultations to break down the steps and logic on paper first was especially helpful. Coding was frustrating and very mind-boggling at times, but with every error I encountered, I became more determined to solve the problems I encountered. And I am proud of what I have achieved with this project!
+          As my background largely lies In motion graphics and graphic design, coding an interface such as this has really presented me with an interesting challenge. Although it was very daunting in the beginning, I started with the part that felt most comfortable for me: design. I had set an achievable goal for this project that was within my skillset and he assignment deadline, and with clear planning, everything slowly came together piece by piece. Learning from the consultations to break down the steps and logic on paper first was especially helpful. Coding was frustrating and very mind-boggling at times, but with every error I encountered, I became more determined to solve each problem. I am proud of what I have achieved with this project!
         </p>
       </section>
     </main>

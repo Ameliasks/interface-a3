@@ -202,6 +202,14 @@ section {
   height: auto;
 }
 
+.screenShot-small {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
 .disk {
   max-width: 130%;
   height: auto;
